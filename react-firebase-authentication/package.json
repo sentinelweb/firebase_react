@@ -3,10 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^4.7.0",
+    "firebase-app": "0.0.1",
+    "firebase-auth": "^0.1.2",
+    "firebase-functions": "^2.1.0",
+    "firebase-messaging": "^1.0.6",
+    "firestore": "^1.1.6",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-firebase-firestore": "0.0.3",
+    "react-material-components-web": "^0.1.18",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "recompose": "^0.30.0"
   },
   "scripts": {
     "start": "react-scripts start",

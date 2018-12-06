@@ -15,10 +15,14 @@ import AdminPage from '../Admin';
 
 import * as ROUTES from '../../constants/routes';
 
+
+import { withAuthentication } from '../Session';
+
 const App = () => (
-  <Router>
+
+    <Router>
     <div>
-      <Navigation />
+      <Navigation/>
 
       <hr />
 
@@ -30,7 +34,8 @@ const App = () => (
       <Route exact path={ROUTES.ACCOUNT} component={AccountPage} />
       <Route exact path={ROUTES.ADMIN} component={AdminPage} />
     </div>
-  </Router>
-);
+    </Router>    
+    
+  );
 
-export default App;
+export default withAuthentication(App);
