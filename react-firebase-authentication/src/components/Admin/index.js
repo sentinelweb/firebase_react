@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { withFirebase } from '../Firebase';
 
+import Button from "@react-mdc/button";
+
 class AdminPage extends Component {
     constructor(props) {
       super(props);
@@ -66,18 +68,24 @@ class AdminPage extends Component {
       
         return (
         <div>
-            <h1>Admin</h1>
+            <h1>Admin: {users.length}</h1>
 
             {loading && <div>Loading ...</div>}
 
             <UserList users={users} />
+
+            <Button raised primary>
+                Hello
+            </Button>
         </div>
+        
+        
       );
     }
   }
 
   const UserList = ({ users }) => (
-    <ul><h1>{users.length}</h1>
+    <ul>
       {users.map(user => (
         <li key={user.uid}>
           <span>
