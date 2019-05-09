@@ -1,16 +1,17 @@
 {
+  // check gus' config https://github.com/AugustinGrigorov/vocabulary-builder/blob/master/firebase.json
   // If you went through the "Realtime Database Security Rules" step.
-//   "database": {
-//     "rules": "database-rules.json"
-//   },
+  //   "database": {
+  //     "rules": "database-rules.json"
+  //   },
   // If you went through the "Storage Security Rules" step.
-//   "storage": {
-//     "rules": "storage.rules"
-//   },
-  "hosting": {
-    "public": "./",
-    "ignore": [
-      
-    ]
-  }
+  //   "storage": {
+  //     "rules": "storage.rules"
+  //   },
+  "public": "build",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
 }
